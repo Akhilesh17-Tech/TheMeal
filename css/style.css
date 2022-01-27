@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation bar for TheMeal */
+nav {
+  margin: auto;
+  display: flex;
+  background-color: #d15959;
+  background-image: linear-gradient(62deg, #d15959 0%, #c49124 100%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* logo for TheMeal */
+nav .logo {
+  font-size: 35px;
+  font-weight: 600;
+  margin-left: 20px;
+  font-variant: small-caps;
+}
+
+/* search box container */
+nav .container-box {
+  margin-right: 30px;
+  width: 36%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+/* favourite meal property  */
+
+nav .container-box ul {
+  display: flex;
+}
+
+nav .container-box ul li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+nav .container-box ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(17, 13, 13);
+}
+
+nav .search-box {
+  /* border: 1px solid black; */
+  display: flex;
+  /* padding: 12px; */
+}
+
+/* search input box */
+nav .search-box input {
+  padding: 12px;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px 0 0 5px;
+}
+
+nav .search-box input:focus {
+  outline: none;
+}
+
+/* search button */
+nav .search-box button {
+  padding: 12px;
+  margin-left: auto;
+  border: none;
+  background-color: rgb(20, 9, 2);
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 0 5px 5px 0;
+}
+
+/* section for search results  */
+section .text-center {
+  text-align: center;
+  padding: 15px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+section .result-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* item box with complete food details */
+.item-box {
+  box-shadow: 0px 0px 4px 4px gray;
+  border-radius: 5px;
+  width: 28%;
+  margin: 10px;
+}
+
+/* image box container for food image */
+.img-box {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+/* image of food */
+.img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+/* name of food */
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+/* button box for both button add fav & get recepi*/
+.btn-box {
+  width: 85%;
+  height: 45px;
+  margin: 12px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+/* button style */
+.btn-box button {
+  width: 45%;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.btn-box button:nth-child(1) {
+  background-color: orangered;
+}
+.btn-box button:nth-child(2) {
+  background-color: rgb(77, 75, 74);
+  text-decoration: none;
+}
+.btn-box button:nth-child(2) a {
+  /* background-color: rgb(77, 75, 74); */
+  text-decoration: none;
+  color: white;
+}
+
+/* MediaQuery for Mobile responsive */
+
+@media only screen and (max-width: 600px) {
+  /* Navigation bar for TheMeal */
+  nav .search-box {
+    /* border: 1px solid black; */
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+  }
+
+  /* search input box */
+  nav .search-box input {
+    padding: 12px;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    font-size: 15px;
+    border-radius: 5px 0 0 5px;
+  }
+
+  /*  section for appending search results */
+  section {
+    margin-top: 20%;
+  }
+
+  /* result container */
+  section .result-container {
+    width: 100%;
+    margin: 0px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* item box with complete food details */
+  .item-box {
+    box-shadow: 0px 0px 4px 4px gray;
+    border-radius: 5px;
+    width: 95%;
+    margin: 25px auto;
+  }
+}

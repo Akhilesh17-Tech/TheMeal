@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMeal</title>
+    <link rel="shortcut icon" href="/images/TheMeal.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation for TheMeal home page-->
+    <nav>
+        <!-- logo for TheMeal -->
+        <div class="logo">TheMeal</div>
+        <div class="container-box">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/favouriteMeal.html">Favorite</a></li>
+            </ul>
+            <div class="search-box">
+                <form action="#">
+                    <input type="text" id="searchInput" onkeyup="getmealList()" placeholder="search here...">
+                </form>
+                <button type="submit" id="getResult">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation End -->
+
+    <!-- Result section for displaying search result -->
+    <section>
+        <!-- heading for search result -->
+        <h1 class="text-center">Your Search Results :</h1>
+        <div class="result-container" id="mealList">
+            <!-- <div class="item-box">
+                <div class="img-box">
+                    <img src="/burger.jpg" alt="">
+                </div>
+                <div class="title">Veg Burger</div>
+                <div class="btn-box">
+                    <button type="submit">Favourite</button>
+                    <button type="submit">Get Recipe</button>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Result section End -->
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation bar for TheMeal */
+nav {
+  display: flex;
+  background-color: #d15959;
+  background-image: linear-gradient(62deg, #d15959 0%, #c49124 100%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* logo and anchor tag property */
+
+nav .logo a {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 20px;
+  font-variant: small-caps;
+}
+
+/* fav-title */
+
+.fav-title {
+  margin-right: 8%;
+  font-size: 25px;
+}
+
+/* section for search results  */
+
+section .text-center {
+  text-align: center;
+  padding: 15px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+section .result-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* item box with complete food details */
+.item-box {
+  box-shadow: 0px 0px 4px 4px gray;
+  border-radius: 5px;
+  width: 28%;
+  margin: 10px;
+}
+
+/* image box container for food image */
+.img-box {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+/* image of food */
+.img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+/* name of food */
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+/* button box for both button */
+.btn-box {
+  width: 90%;
+  /* height: 45px; */
+  margin: 12px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+/*  button style */
+.btn-box button {
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Recipe button design */
+.btn-box .get-recipie {
+  width: 40%;
+  background-color: orangered;
+  padding: 8px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn-box .get-recipie a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* favorite button style */
+.btn-box .favorite-button {
+  width: 55%;
+  background-color: rgb(124, 122, 121);
+  text-align: center;
+  /* margin-right: 10px; */
+  padding: 8px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+/* MediaQuery for Mobile responsive */
+
+@media only screen and (max-width: 600px) {
+  /* Heading for Favorite Meal */
+  .fav-title {
+    margin-right: 8%;
+    font-size: 15px;
+  }
+
+  /*  section for appending search results */
+
+  /* result container */
+  section .result-container {
+    width: 100%;
+    margin: 0px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* item box with complete food details */
+  .item-box {
+    box-shadow: 0px 0px 4px 4px gray;
+    border-radius: 5px;
+    width: 95%;
+    margin: 25px auto;
+  }
+  .btn-box {
+    /* border: 1px solid green; */
+    padding: 10px 0;
+  }
+}
