@@ -20,7 +20,7 @@ function getmealList() {
                 </div>
                 <div class="title">${meal.strMeal}</div>
                 <div class="btn-box">
-                     <button type="submit" onclick="functionToExecute(${meal.idMeal})"><i class="far fa-heart"></i> Favourite</button>
+                   <button type="submit" onclick="functionToExecute(${meal.idMeal})"><i class="far fa-heart"></i> Favourite</button>
                     <button type="submit"><a href="mealDetail.html?id=${meal.idMeal}" value="${meal.idMeal}">Get Recipe</a></button>
                 </div>
             </div>`;
