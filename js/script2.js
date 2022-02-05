@@ -10,20 +10,6 @@ for (let id of item) {
 
 //this function fetches a meal with a specific id
 function getMeal(id) {
-  // var xhrRequest = new XMLHttpRequest(); //creating a new xhr request
-  // xhrRequest.onload = function () {
-  //   let res = JSON.parse(xhrRequest.response).meals[0]; //parsing resultant food item returned
-  //   createFoodItem(res); //creating the new item's HTML
-  // };
-  // //creating a get api call to fetch meal with given id
-  // xhrRequest.open(
-  //   "get",
-  //   `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`,
-  //   true
-  // );
-  // //sending the request
-  // xhrRequest.send();
-
   fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
     .then((response) => response.json())
     .then((data) => {
