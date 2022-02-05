@@ -22,7 +22,7 @@ function fetchRecipe() {
                     <div class="common"><b>Food Category : </b> ${meal.strCategory}</div>
                     <div class="common"><b>Instructions : </b>${meal.strInstructions}</div>
                     <div class="common">
-                        <b>ingredieants Required :</b>
+                        <b>Ingredieants Required :</b>
                         <ul>
                             <li>${meal.strIngredient1}</li>
                             <li>${meal.strIngredient2}</li>
