@@ -32,7 +32,7 @@ function getmealList() {
     });
 }
 
-function fetchImage() {
+function fetchDefault() {
   fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
     .then((Response) => Response.json())
     .then((data) => {
@@ -55,7 +55,7 @@ function fetchImage() {
     });
 }
 
-fetchImage();
+fetchDefault();
 
 //if browser dosen't have 'meal-favourites' in local storage we create one
 let fav = window.localStorage.getItem("meal-favourites");
